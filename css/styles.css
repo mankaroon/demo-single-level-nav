@@ -5,7 +5,7 @@
 
 
 header{
-    max-width: 58rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -22,6 +22,25 @@ ul.menu a{
     display: block;
     /* Good practice to make anchor tags block level elemennts */
 
+}
+ul.menu a:hover,
+ul.menu a:active{
+    color: #39ff14;
+
+}
+ul.menu a:hover path,
+ul.menu a:hover rect,
+ul.menu a:hover polygon{
+    fill:#39ff14;
+}
+svg path,
+svg rect,
+svg polygon {
+    fill: #fff;
+}
+
+svg{
+    width: 1.5rem;
 }
 
 /* Change from  a stacking nav to a horizontal nav on larger */
