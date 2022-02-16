@@ -1,1 +1,42 @@
 /* developer styles go here */
+
+
+    /* Base fonts styles go on the body element */
+
+
+header{
+    max-width: 58rem;
+    margin: 0 auto;
+}
+
+ul.menu{
+    background-color: #000;
+    color: #fff;
+}
+ul.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    /* inline elements will not take top and botton padding */
+    display: block;
+    /* Good practice to make anchor tags block level elemennts */
+
+}
+
+/* Change from  a stacking nav to a horizontal nav on larger */
+@media screen and (min-width: 30rem){
+    ul.menu{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: space-between;
+        
+    }
+
+    ul.menu li{
+        /* flex grow and flex shrink go on the children */
+        flex-grow: 1;
+        text-align: center;
+    }
+
+}
